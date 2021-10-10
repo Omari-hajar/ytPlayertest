@@ -1,10 +1,12 @@
-package com.example.ytplayer_test
+package com.example.ytplayer_v2
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.ytplayer_test.R
 import com.example.ytplayer_test.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity(), OnVideoClickListener {
@@ -21,7 +23,7 @@ class MainActivity : AppCompatActivity(), OnVideoClickListener {
         rvMain = binding.rvMain
 
         binding.rvMain.adapter = RVAdapter(list, this)
-        binding.rvMain.layoutManager = LinearLayoutManager(this)
+        binding.rvMain.layoutManager = GridLayoutManager(this, 2)
 
         binding.rvMain.adapter!!.notifyDataSetChanged()
 

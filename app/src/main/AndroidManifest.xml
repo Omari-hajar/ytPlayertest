@@ -15,11 +15,11 @@
         android:theme="@style/Theme.YtPlayertest">
 
         <activity
-            android:name=".VideoActivity"
+            android:name="com.example.ytplayer_v2.VideoActivity"
             android:exported="true"
             android:configChanges="keyboardHidden|orientation|screenSize|screenLayout"/>
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.ytplayer_v2.MainActivity"
             android:exported="true"
             >
             <intent-filter>

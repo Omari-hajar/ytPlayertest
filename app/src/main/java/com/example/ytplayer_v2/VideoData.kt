@@ -1,4 +1,4 @@
-package com.example.ytplayer_test
+package com.example.ytplayer_v2
 
 data class VideoData (
     val title: String,
